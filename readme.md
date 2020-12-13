@@ -16,7 +16,9 @@ $ docker-compose up -d
 ```
 open app at http://localhost:3000
 
-test usename and password
+test username and password for login
+```
 username = avybe
 password = admin@123
+```
 

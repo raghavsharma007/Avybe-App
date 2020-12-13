@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body{
+  background-color: #000013;
+  font-size: 14px;
+  color: #f7f7f7;
+}
+
+/* Login Page */
+.left-container{
+  /* background-image: url(./assets/images/neon-circle.png); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: -28rem;
+}
+
+.yeseva-one{
+  font-family: 'Yeseva One', cursive;
+}
+
+.avybe-title{
+  transform: translateY(0%);
+  animation: bounce 2s forwards ease;
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1,1)    translateY(0); }
+  10%  { transform: scale(1.1,.9) translateY(0); }
+  30%  { transform: scale(.9,1.1) translateY(-45px); }
+  50%  { transform: scale(1,1)    translateY(0); }
+  57%  { transform: scale(1,1)    translateY(-7px); }
+  64%  { transform: scale(1,1)    translateY(0); }
+  100% { transform: scale(1,1)    translateY(0); }
+}
+
+.box{
+  position: relative;
+}
+
+.box::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: calc(100% - 150px);
+  height: 2px;
+  background-color: #f7f7f7;
+}
+
+.inputField{
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+}
+
+.btn--primary{
+  background: linear-gradient(150.54deg,#c102f9,#6257e6 80%);
+  padding: 1rem;
+  transition: all .25s ease;
+}
+
+.btn--secondary{
+  background: #2c2c2c;
+  padding: 1rem;
+}
+
+
+.btn--primary:hover{
+  box-shadow: 0 20px 20px -10px rgba(98, 86, 230,.25);
+  transform: translateY(-5px);
+}
+
+.pass-eye{
+  position: absolute;
+  right: 1rem;
+  top: 60%;
+  transform: translateY(-60%);
+}
+
+.profile-img{
+  background-color: #6257e6;
+  background-image: url('./assets/images/pacman.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  position: relative;
+}
+
+.profile-img,
+.profile-img img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.profile-img,
+.profile-img img,
+.profile-img ~ i{
+  pointer-events: none;
+}

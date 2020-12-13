@@ -1,5 +1,5 @@
 clone the repo
-Two ways to run the app:
+### Two ways to run the app:
 1. bash script
 2. docker compose
 

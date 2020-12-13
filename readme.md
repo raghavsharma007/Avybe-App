@@ -33,7 +33,7 @@ $ npm start
 ```
 app: http://locahost:3000
 
-## ## Basic way (with build)
+## Basic way (with build)
 ```
 $ cd backend
 $ pip install -r requirements.txt

@@ -9,7 +9,7 @@ services:
       - "8000:8000"
   frontend:
     build: ./frontend
-    command: ["npm", "start"]
+    command: ["npm", "run", "build"]
     volumes:
       - ./frontend:/app/frontend
       - node-modules:/app/frontend/node_modules

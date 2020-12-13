@@ -1,7 +1,7 @@
 clone the repo
 ### Two ways to run the app:
-1. bash script
-2. docker compose
+1. bash script (need node and python to be installed)
+2. docker compose (needs only docker environment)
 
 ## Bash Script
 ```

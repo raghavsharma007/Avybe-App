@@ -22,7 +22,7 @@ test username and password for login
 username = avybe
 password = admin@123
 ```
-## Basic way
+## Basic way (without build)
 ```
 $ cd backend
 $ pip install -r requirements.txt
@@ -31,5 +31,17 @@ $ cd ../frontend
 $ npm install
 $ npm start
 ```
+app: http://locahost:3000
+
+## ## Basic way (with build)
+```
+$ cd backend
+$ pip install -r requirements.txt
+$ python manage.py runserver
+$ cd ../frontend
+$ npm install
+$ npm run build
+```
+app: http://locahost:8000
 
 

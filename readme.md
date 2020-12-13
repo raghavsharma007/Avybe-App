@@ -1,7 +1,8 @@
 clone the repo
-### Two ways to run the app:
+### Three ways to run the app:
 1. bash script (need node and python to be installed)
 2. docker compose (needs only docker environment)
+3. Basic way
 
 ## Bash Script
 ```
@@ -21,4 +22,14 @@ test username and password for login
 username = avybe
 password = admin@123
 ```
+## Basic way
+```
+$ cd backend
+$ pip install -r requirements.txt
+$ python manage.py runserver
+$ cd ../frontend
+$ npm install
+$ npm start
+```
+
 
